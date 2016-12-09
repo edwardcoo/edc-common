@@ -1,0 +1,35 @@
+<form id="listForm" role="form" action="/goods/test/list" method="post" style="position: relative;">
+	<table class="table table-bordered table-hover table-striped table-condensed ">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>用户名</th>
+				<th>年龄</th>
+				<th>状态</th>
+				<th>时间</th>
+			</tr>
+		</thead>
+		<tbody id="personList">
+			#foreach($person in $personPage.persons)
+			<tr>
+				<td class="id">$person.id</td>
+				<td>$person.name</td>
+				<td>
+					$person.age
+				</td>
+				<td>
+					#if($person.status == 1)
+						正常
+					#elseif($person.status == 2 )
+						其他
+					#end
+				</td>
+				<td>${person.time}</td>
+			</tr>
+			#end
+		</tbody>
+	</table>
+	<div class="col-sm-11">
+		
+	</div>
+</form>	
