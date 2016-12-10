@@ -12,15 +12,13 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping("/hello/user")
-    public String getUserInfo(){
+    public String getUserInfo() {
         return "this is userInfo !!!";
     }
-    
+
     @RequestMapping("/test/view")
-    public ModelAndView getlist(){
-        ModelAndView view = new ModelAndView("test/list");
-        
-        return view;
+    public ModelAndView getlist() {
+        return new ModelAndView("test/list");
     }
-    
+
 }

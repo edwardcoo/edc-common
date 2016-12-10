@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>index</title>
+	<style >
+		.indexul li{list-style-type: decimal;}
+    </style>
+</head>
+<body>
+	<ul class="indexul">
+		<li><a href="/week/list">根据年获取第N周下拉列表</a></li>
+    </ul>
+</body>
+</html>
