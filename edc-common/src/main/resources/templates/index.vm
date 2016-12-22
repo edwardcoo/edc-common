@@ -9,5 +9,6 @@
 	<ul class="indexul">
 		<li><a href="/week/list">根据年获取第N周下拉列表</a></li>
     </ul>
+	<script type="text/javascript" src="/typescript/test.js"></script>
 </body>
 </html>
