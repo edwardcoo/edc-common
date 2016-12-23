@@ -30,4 +30,10 @@ public class IndexController {
         return view;
     }
 
+    @RequestMapping("/ts")
+    public ModelAndView typescripts() {
+        ModelAndView view = new ModelAndView("typescript/list");
+        return view;
+    }
+
 }
