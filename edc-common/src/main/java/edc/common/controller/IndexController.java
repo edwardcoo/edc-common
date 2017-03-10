@@ -19,8 +19,12 @@ public class IndexController {
     }
 
     @RequestMapping("/week/list")
-    public ModelAndView weekList() {
-        ModelAndView view = new ModelAndView("week/list");
+    public ModelAndView weekList(Integer type) {
+        String viewpath = "week/list";
+        if (type != null && type == 2) {
+            viewpath = "week/list2";
+        }
+        ModelAndView view = new ModelAndView(viewpath);
         List<Integer> years = new ArrayList<>();
         int now = Year.now().getValue();
         for (int i = now; i > now - 10; i--) {
