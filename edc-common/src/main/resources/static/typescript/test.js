@@ -32,3 +32,4 @@ $(document).ready(function () {
     var result = testMultiType('11', '山东', true);
     $("#tslabel").html(result);
 });
+//# sourceMappingURL=test.js.map
